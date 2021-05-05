@@ -26,6 +26,7 @@ class LoginController extends Controller
             'password' => 'required'
         ]);
 
+
         $authorizedUser = Auth::attempt($validated);
 
         dd($authorizedUser);
